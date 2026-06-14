@@ -1,0 +1,301 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhytoMedica - O Poder das Plantas Medicinais</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<button id="darkModeBtn" class="dark-mode-btn">
+    🌙
+</button>
+
+<header class="hero">
+
+<nav class="navbar">
+
+<div class="logo">
+🌿 PhytoMedica
+</div>
+
+<ul class="menu">
+
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#pesquisa">Pesquisa</a></li>
+<li><a href="#ervas">Ervas</a></li>
+<li><a href="#quiz">Quiz</a></li>
+<li><a href="#galeria">Galeria</a></li>
+<li><a href="#curiosidades">Curiosidades</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero-content">
+
+<h1>🌿 PhytoMedica</h1>
+
+<p>
+Descubra o incrível universo das plantas e ervas medicinais.
+</p>
+
+<a href="#sobre" class="btn">
+Explorar Agora
+</a>
+
+</div>
+
+</header>
+
+<section class="contador-section">
+
+<div class="contador-card">
+<h2 id="contador1">0</h2>
+<p>Plantas Catalogadas</p>
+</div>
+
+<div class="contador-card">
+<h2 id="contador2">0</h2>
+<p>Curiosidades</p>
+</div>
+
+<div class="contador-card">
+<h2 id="contador3">0</h2>
+<p>Espécies Medicinais</p>
+</div>
+
+</section>
+
+<section id="sobre">
+
+<h2>🌱 Sobre o Projeto</h2>
+
+<p>
+A PhytoMedica é uma plataforma educativa que apresenta informações sobre plantas e ervas medicinais, seus usos tradicionais, curiosidades e características.
+</p>
+
+</section>
+
+<section id="pesquisa">
+
+<h2>🔎 Pesquisa Inteligente</h2>
+
+<p>
+Pesquise sintomas ou temas relacionados:
+</p>
+
+<div class="search-container">
+
+<input
+type="text"
+id="busca"
+placeholder="Ex: dor de cabeça">
+
+<button onclick="pesquisar()">
+Pesquisar
+</button>
+
+</div>
+
+<div id="resultadoPesquisa"></div>
+
+<div class="alerta">
+⚠️ Informações educativas. Não substituem orientação médica.
+</div>
+
+</section>
+
+<section id="ervas">
+
+<h2>🌿 Enciclopédia de Plantas Medicinais</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37">
+<h3>Camomila</h3>
+<p>Tradicionalmente utilizada em infusões calmantes.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf">
+<h3>Hortelã</h3>
+<p>Conhecida pelo aroma refrescante.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+<h3>Erva-Cidreira</h3>
+<p>Muito popular em chás.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1457530378978-8bac673b8062">
+<h3>Alecrim</h3>
+<p>Erva aromática muito utilizada.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
+<h3>Lavanda</h3>
+<p>Famosa pelo perfume agradável.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<h3>Capim-Limão</h3>
+<p>Tradicionalmente usado em infusões.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352">
+<h3>Gengibre</h3>
+<p>Raiz amplamente conhecida.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601">
+<h3>Canela</h3>
+<p>Especiaria muito popular.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6">
+<h3>Manjericão</h3>
+<p>Planta aromática utilizada em diversas culturas.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
+<h3>Sálvia</h3>
+<p>Tradicionalmente cultivada em jardins.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543">
+<h3>Eucalipto</h3>
+<p>Árvore conhecida pelo aroma característico.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc">
+<h3>Melissa</h3>
+<p>Também conhecida como erva-cidreira verdadeira.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<h2>🏆 Quiz Interativo</h2>
+
+<div class="quiz-box">
+
+<div class="question">
+<p>1. Qual destas é uma erva medicinal?</p>
+
+<label><input type="radio" name="q1" value="1"> Camomila</label>
+<label><input type="radio" name="q1" value="0"> Concreto</label>
+
+</div>
+
+<div class="question">
+<p>2. Qual planta possui aroma refrescante?</p>
+
+<label><input type="radio" name="q2" value="1"> Hortelã</label>
+<label><input type="radio" name="q2" value="0"> Tijolo</label>
+
+</div>
+
+<div class="question">
+<p>3. O alecrim é:</p>
+
+<label><input type="radio" name="q3" value="1"> Erva aromática</label>
+<label><input type="radio" name="q3" value="0"> Metal</label>
+
+</div>
+
+<div class="question">
+<p>4. A lavanda é conhecida por:</p>
+
+<label><input type="radio" name="q4" value="1"> Seu perfume</label>
+<label><input type="radio" name="q4" value="0"> Ser um minério</label>
+
+</div>
+
+<button onclick="corrigirQuiz()">
+Ver Resultado
+</button>
+
+<div id="pontuacao"></div>
+
+</div>
+
+</section>
+
+<section id="curiosidades">
+
+<h2>💡 Curiosidade do Dia</h2>
+
+<div class="curiosidade-box">
+
+<p id="curiosidadeTexto">
+Clique no botão para descobrir uma curiosidade.
+</p>
+
+<button onclick="novaCuriosidade()">
+Nova Curiosidade
+</button>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2>📸 Galeria Natural</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37">
+<img src="https://images.unsplash.com/photo-1457530378978-8bac673b8062">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf">
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352">
+<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601">
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>🌿 PhytoMedica</h3>
+
+<p>
+Conhecimento natural ao alcance de todos.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
